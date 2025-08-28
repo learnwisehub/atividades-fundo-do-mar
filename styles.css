@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Reset e Base Styles */
 * {
     margin: 0;
@@ -508,3 +512,168 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* --- Estilos para o Bloco de Preço --- */
+.price-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #FF7F50; /* Cor de destaque, pode ajustar */
+}
+
+.price-original {
+    font-size: 18px;
+    color: #6c757d;
+    margin: 0;
+    text-decoration: line-through; /* Efeito de riscado */
+}
+
+.price-promo {
+    font-size: 36px;
+    font-weight: 700; /* Fonte mais grossa */
+    color: #2c3e50; /* Cor principal, um azul escuro */
+    margin: 5px 0;
+}
+
+.price-promo strong {
+    color: #27ae60; /* Verde para o preço final, cor de sucesso */
+}
+
+.price-installments {
+    font-size: 16px;
+    color: #34495e;
+    margin: 0;
+}
+
+.legal-notice {
+  font-size: 12px; /* ou 0.8rem */
+  color: #777; /* um cinza um pouco mais claro */
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* ================================== */
+/* == FAQ & GUARANTEE SECTION STYLES == */
+/* ================================== */
+
+.faq-guarantee {
+    padding: 60px 0;
+    background-color: #f9f9f9; /* Um fundo cinza muito claro para diferenciar */
+}
+
+.faq-guarantee-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Coluna da esquerda 2x maior que a da direita */
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.faq-subtitle {
+    font-size: 1.5rem; /* 24px */
+    color: #333;
+    margin-bottom: 20px;
+    border-left: 4px solid #007bff; /* Cor primária do seu site */
+    padding-left: 15px;
+}
+
+/* Coluna da Esquerda */
+.faq-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list li {
+    margin-bottom: 25px; /* Aumenta o espaço entre os benefícios */
+}
+
+.benefit-title {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.benefit-icon {
+    margin-right: 10px;
+    color: #28a745; /* Verde */
+    font-size: 1.2rem;
+    line-height: 1; /* Alinha o ícone verticalmente */
+}
+
+.benefit-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+    padding-left: 34px; /* Alinha a descrição com o texto do título */
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.faq-item p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: #555;
+}
+
+/* Coluna da Direita */
+.guarantee-column {
+    position: relative; /* Necessário para o efeito sticky */
+}
+
+.guarantee-box-sticky {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    border: 1px solid #eee;
+    position: sticky; /* Efeito que faz a caixa "seguir" o scroll */
+    top: 20px; /* Distância do topo ao começar a "seguir" */
+}
+
+.guarantee-seal {
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+
+.guarantee-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Media Query para telas menores (celulares) */
+@media (max-width: 768px) {
+    .faq-guarantee-grid {
+        grid-template-columns: 1fr; /* Uma coluna só */
+    }
+
+    .guarantee-box-sticky {
+        position: static; /* Desativa o efeito sticky em telas pequenas */
+        margin-top: 30px;
+    }
+}
