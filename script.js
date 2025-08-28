@@ -61,17 +61,6 @@ document.querySelectorAll('.cta-button').forEach(button => {
     });
 });
 
-// Add click tracking for CTA buttons (placeholder for analytics)
-document.querySelectorAll('.cta-button').forEach(button => {
-    button.addEventListener('click', function(e) {
-        // Here you would typically add analytics tracking
-        console.log('CTA clicked:', this.textContent);
-        
-        // For now, we'll just show an alert since we don't have a real purchase link
-        e.preventDefault();
-        alert('Redirecionando para a plataforma de vendas...\n\nEm uma implementação real, este botão levaria para a página de compra do ebook.');
-    });
-});
 
 // Add loading animation
 window.addEventListener('load', function() {
